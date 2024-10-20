@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="/action_page.php">
+<!-- readonly & disabled , requried ,size, max-minlength autocomple, autofocus, multiple attributes -->
+        <label for="fname">First Name</label><br>
+        <input type="text" id="fname" name="fname" value="john" readonly><br>
+        
+        <label for="lname">Last Name</label><br>
+        <input type="text" id="lname" name="lname" value="doe" disabled><br>
+        
+        <label for="password">Password</label><br>
+        <input type="password" id="passwaord" name="password" minlength="4" required><br>
+
+        <label for="pin">PIN</label><br>
+        <input type="text" id="'pin" name="pin" maxlength="6" minlength="2" size="4"><br>
+
+        <label for="datemax">Enter a date before 1980-01-01:</label>
+        <input type="date" id="datetime" name="datemax" max="1979-12-31"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" autocomplete="on"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" autofocus ><br>
+
+        <label for="file">File:</label><!--file attributes : multiple-->
+        <input type="file" multiple accept=".pdf,.ppt"><br>
+
+        <input type="submit">
+    </form>
+</body>
+</html>
