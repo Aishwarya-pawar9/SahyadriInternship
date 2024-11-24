@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store</title>
+
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #009065;
+    color: #fff;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.banner {
+    text-align: center;
+    padding: 100px 20px;
+    background: #00795532;
+}
+
+.banner h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.products {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.about, .contact {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+footer {
+    background-color: #009065;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="logo">
+            <h1>Clothing Store</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="banner">
+        <h2>Welcome to the Clothing Store</h2>
+        <p>Discover the latest trends and stylish outfits for all occasions.</p>
+         <div class="btn" >Shop Now </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <h2>Featured Products</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="data:image/jpeg;base64,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" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>299</p>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdF3BxT2MwMhMmrfnNvCZQik4Y0JMiS0I8jg&s" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>399</p>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRSSeWMJ4sSCWL9iE1-gpeQp0G5N9CmGhw8A&s" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>499</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We are a trendy clothing store committed to providing high-quality fashion for everyone. Our collections
+            include a variety of styles, so there's something for everyone.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@clothingstore.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Clothing Store. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
